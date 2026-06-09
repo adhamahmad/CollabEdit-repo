@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #FAFAF9;
+  color: #111827;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Quill editor overrides — clean up the snow theme defaults */
+.ql-container.ql-snow {
+  border: none !important;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.ql-toolbar.ql-snow {
+  border: none !important;
+  border-bottom: 1px solid #E5E7EB !important;
+  padding: 8px 12px;
+}
+
+.ql-editor {
+  padding: 24px 32px;
+  min-height: 480px;
+  color: #111827;
+}
+
+.ql-editor.ql-blank::before {
+  color: #9CA3AF;
+  font-style: normal;
+  left: 32px;
+}
+
+.ql-editor p {
+  margin-bottom: 4px;
+}
