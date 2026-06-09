@@ -45,7 +45,7 @@ function Navbar({ onShare, onDownload, shareStatus, awareness, identity, onNameC
 
         {/* GitHub — icon only */}
         <a
-          href="https://github.com"
+          href="https://github.com/adhamahmad/CollabEdit-repo"
           target="_blank"
           rel="noopener noreferrer"
           style={nav.ghostBtn}
