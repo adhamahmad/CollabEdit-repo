@@ -31,8 +31,8 @@ The system is fully self-hosted, open-source, requires no database, no signup, a
 ### Docker (recommended)
 
 ```bash
-git clone <repo-url>
-cd <repo>
+git clone https://github.com/adhamahmad/CollabEdit-repo
+cd CollabEdit-repo
 docker compose up --build
 ```
 
