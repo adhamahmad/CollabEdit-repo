@@ -350,7 +350,7 @@ const Editor = forwardRef(function Editor({
         let wsReady = false;
         let alive = true;
 
-        const SNAPSHOT_THRESHOLD = 5;
+        const SNAPSHOT_THRESHOLD = 500;
         const COMPACTION_THRESHOLD = 100;
 
         const {
@@ -401,7 +401,7 @@ const Editor = forwardRef(function Editor({
                 );
 
                 if (
-                    senderId === identityRef.current.userId && // TODO test the snapshot
+                    senderId === identityRef.current.userId &&
                     updateCount > 0 &&
                     updateCount % SNAPSHOT_THRESHOLD === 0
                 ) {
@@ -412,8 +412,6 @@ const Editor = forwardRef(function Editor({
                         );
 
                         fetch(
-                            // `https://sphere-motocross-hunchback.ngrok-free.app/${workspaceId}/snapshot`,
-                            // `http://localhost:8080/${workspaceId}/snapshot`,
                             `/api/${workspaceId}/snapshot`,
                             {
                                 method: "POST",
@@ -437,7 +435,7 @@ const Editor = forwardRef(function Editor({
                                     err
                                 );
                             });
-                    },500);
+                    }, 500);
                 }
             },
 
@@ -580,7 +578,7 @@ const Editor = forwardRef(function Editor({
 
             appendPending(workspaceId, b64);
 
-            if (pendingUpdates.length > COMPACTION_THRESHOLD) { // TODO test
+            if (pendingUpdates.length > COMPACTION_THRESHOLD) {
                 const compacted = bytesToBase64(
                     Y.encodeStateAsUpdate(ydoc)
                 );

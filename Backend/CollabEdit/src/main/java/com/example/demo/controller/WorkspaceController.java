@@ -12,8 +12,6 @@ import com.example.demo.entity.Workspace;
 import com.example.demo.mapper.WorkspaceMapper;
 import com.example.demo.service.WorkspaceService;
 
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 

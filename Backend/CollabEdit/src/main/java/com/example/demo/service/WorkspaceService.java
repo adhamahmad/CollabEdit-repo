@@ -1,7 +1,5 @@
 package com.example.demo.service;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
 import org.springframework.stereotype.Service;
@@ -23,7 +21,6 @@ public class WorkspaceService {
             .maximumSize(10_000) // optional safety limit
             .build();
 
-    // TODO TTL
     public Workspace createWorkspace() {
         String id = publicUrlGenerator.generate();
 

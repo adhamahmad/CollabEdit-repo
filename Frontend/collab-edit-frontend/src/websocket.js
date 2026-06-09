@@ -33,16 +33,6 @@ export function createStompClient(
         reconnectDelay: 3000,
     });
  
-    // const client = new Client({
-    //     webSocketFactory: () =>
-    //         new SockJS("http://localhost:8080/ws"),
-    //     reconnectDelay: 3000,
-    //     debug: () => {},
-    // });
-    // const client = new Client({
-    //     brokerURL: "wss://sphere-motocross-hunchback.ngrok-free.dev/ws",
-    //     reconnectDelay: 3000,
-    // });
 
     function safeParse(body) {
         try {
