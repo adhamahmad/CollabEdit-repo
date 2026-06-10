@@ -2,7 +2,7 @@ services:
 
   backend:
     build:
-      context: ./Backend\CollabEdit
+      context: ./Backend/CollabEdit
       dockerfile: Dockerfile
     # No ports mapping — backend is internal to the Docker network only.
     # Only the frontend (Nginx) container can reach it via http://backend:8080.
@@ -13,7 +13,7 @@ services:
 
   frontend:
     build:
-      context: ./Frontend\collab-edit-frontend
+      context: ./Frontend/collab-edit-frontend
       dockerfile: Dockerfile
     ports:
       # HOST_PORT:CONTAINER_PORT
