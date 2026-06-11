@@ -1,16 +1,12 @@
-# CollabEdit
+# SyncPad
 
-CollabEdit is a minimal, efficient, open-source collaborative text editor that enables real-time multi-user editing directly in the browser. It is built with **Yjs CRDTs** over **WebSockets** and keeps the backend intentionally simple and CRDT-agnostic, focusing only on message relay and persistence.
+SyncPad is a minimal, efficient, open-source collaborative text editor that enables real-time multi-user editing directly in the browser. It is built with **Yjs CRDTs** over **WebSockets** and keeps the backend intentionally simple and CRDT-agnostic, focusing only on message relay and persistence.
 
 The system is fully self-hosted, open-source, requires no database, no signup, and runs in a lightweight Docker setup.
 
 ---
 
-<!--
-  Screenshot or GIF placeholder
-  Replace with: ![CollabEdit demo](docs/demo.gif)
--->
-> ![CollabEdit demo](media/collabe_edit_HD.gif)
+> ![SyncPad demo](media/collabe_edit_HD.gif)
 
 ---
 
