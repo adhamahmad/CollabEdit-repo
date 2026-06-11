@@ -12,6 +12,7 @@ The system is fully self-hosted, open-source, requires no database, no signup, a
 -->
 > ![CollabEdit demo](media/collabe_edit_HD.gif)
 
+Try now at: [CollabEdit](https://collabedit.duckdns.org/)
 ---
 
 ## Key Features
